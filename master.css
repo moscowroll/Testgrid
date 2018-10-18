@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --color-white: #FFFFFF;
+  --color-grey: #9A9A9A;
+  --color-black: #000000;
+
+}
+
+
+
+.container{
+  display:grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 70px 640px 108px 595px 595px 528px 592px 883px 592px 324px 615px 84px;
+  grid-template-areas:
+    "header"
+    "trial"
+    "socialmedia"
+    "tabs"
+    "sublist"
+    "picture"
+    "awesome"
+    "price"
+    "customers"
+    "design"
+    "contacts"
+    "footer";
+    
+}
+
+
+
+.Header{
+  background-color: var(--color-black);
+  grid-area: header;
+}
+
+.Trial{
+  background-color: var(--color-grey);
+  grid-area: trial;
+}
+
+
+.SocialMedia{
+  background-color: var(--color-white);
+  grid-area: socialmedia;
+}
+
+.Tabs{
+  background-color: var(--color-grey);
+  grid-area: tabs;
+}
+
+.SubList{
+  background-color: var(--color-white);
+  grid-area: sublist;
+}
+
+.Picture{
+  background-color: var(--color-grey);
+  grid-area: picture;
+}
+
+.Awesome{
+  background-color: var(--color-white);
+  grid-area: awesome;
+}
+
+.Price{
+  background-color: var(--color-grey);
+  grid-auto-columns: price;
+}
+
+.Customers{
+  background-color: var(--color-white);
+  grid-area: customers;
+}
+
+.Design{
+  background-color: var(--color-grey);
+  grid-area: design;
+}
+
+.Contacts{
+  background-color: var(--color-white);
+  grid-area: contacts;
+}
+
+.Footer{
+  background-color: var(--color-black);
+  grid-area: footer;
+}
